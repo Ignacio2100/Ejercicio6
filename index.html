@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzería - Menú</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Menú de Pizzas Dominos</h1>
+
+    <div class="pizza-container">
+
+      <div class="pizza-card">
+        <img src="pizza.png" alt="Pizza Deluxe">
+        <h3>Pizza Deluxe</h3>
+        <p>Cantidad: <span id="quantity-pizza1">0</span></p>
+        <button onclick="incrementPizza('quantity-pizza1')"> + </button>
+        <button onclick="decrementPizza('quantity-pizza1')"> - </button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="pizza2.png" alt="Otra Pizza">
+        <h3>Pizza Mexicana</h3>
+        <p>Cantidad: <span id="quantity-pizza2">0</span></p>
+        <button onclick="incrementPizza('quantity-pizza2')">+</button>
+        <button onclick="decrementPizza('quantity-pizza2')">-</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="pizza3.png" alt="Tercera Pizza">
+        <h3>Pizza Italiana</h3>
+        <p>Cantidad: <span id="quantity-pizza3">0</span></p>
+        <button onclick="incrementPizza('quantity-pizza3')">+</button>
+        <button onclick="decrementPizza('quantity-pizza3')">-</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Js.js"></script>
+</body>
+</html>
